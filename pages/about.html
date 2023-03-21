@@ -19,13 +19,92 @@
 			<img src="../imgs/me.png" style="width: 35%; padding-right: 80px; transform: translateY(280px);"class="rellax" data-rellax-speed="6">
 			<p style="text-align: center;">I am a student in year 10 at East Doncaster secondary collage. I study photography, Media, IT, and Systems Technology along with the handful of other subjects I took. I am passionate about IT and want to be a robotic engineer or full-stack developer when I graduate. I am also very passionate about photography and that is another potential job path.</p>
 		</div>
+		<div style="display: flex;">
+			<div style="justify-content: center; width: 75%; margin-left: auto; margin-right: auto; padding-bottom: 100px; text-align: left;">
+				<div id="trig1"></div>
+				<div id="pin1" style="padding-bottom: 700px;">
+					<p>Skills:</p>
+					<p>1. Photography</p>
+				</div>
+				<div id="trig2"></div>
+				<div id="pin2" style="padding-bottom:500px;">
+					<p>2. Video Editing</p>
+				</div>
+				<div id="trig3"></div>
+				<div id="pin3" style="padding-bottom: 500px;">
+					<p>3. Front-End web development</p>
+				</div>
+				<div id="trig4"></div>
+				<div id="pin4" style="padding-bottom: 500px;">
+					<p>4. JavaScript</p>
+				</div>
+				<div id="trig5"></div>
+				<div id="pin5" style="padding-bottom: 500px;">
+					<p>5. Python</p>
+				</div>
+			</div>
+			<img>
+		</div>
+		
 
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
 	<script src="../script.js"></script>
 	<script src="../js/typewriting.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>	
+
 	<script>
 		var rellax = new Rellax('.rellax');
+
+		var controller = new ScrollMagic.Controller();
+
+        var Scene1 = new ScrollMagic.Scene({
+            triggerElement: '#trig1',
+        })
+
+        .triggerHook(0.17)
+        .setPin("#pin1")
+/*         .addIndicators() 
+ */        .addTo(controller);
+
+        var Scene2 = new ScrollMagic.Scene({
+            triggerElement: '#trig2',
+            pushFollowers: true
+        })
+
+        .triggerHook(0.35)
+        .setPin("#pin2")
+/*         .addIndicators() 
+ */        .addTo(controller);
+        
+        var Scene3 = new ScrollMagic.Scene({
+            triggerElement: '#trig3',
+            pushFollowers: true
+        })
+        .triggerHook(0.45)
+        .setPin("#pin3")
+/*         .addIndicators() 
+ */        .addTo(controller);
+
+        var Scene4 = new ScrollMagic.Scene({
+            triggerElement: '#trig4',
+            pushFollowers: true
+        })
+        .triggerHook(0.55)
+        .setPin("#pin4")
+/*         .addIndicators() 
+ */        .addTo(controller);
+        var Scene5 = new ScrollMagic.Scene({
+            triggerElement: '#trig5',
+            pushFollowers: true
+        })
+        .triggerHook(0.65)
+        .setPin("#pin5")
+/*         .addIndicators() 
+ */        .addTo(controller);
+
+
 	</script>
 </body>
 </html>

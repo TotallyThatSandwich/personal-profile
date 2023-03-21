@@ -1,5 +1,3 @@
-var rellax = new Rellax('.rellax');
-
 var controller = new ScrollMagic.Controller();
 
 var Scene = new ScrollMagic.Scene({
