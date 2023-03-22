@@ -123,17 +123,33 @@ body {
 }
 
 .toggle {
+	animation: appearL 0.5s;
 	transform: translateX(0);
 	opacity: 1;
 }
 
 .remove {
-	animation: temove 1s;
+	animation: removeL 1s;
 	opacity: 0;
 	transform: translateX(-800px);
 }
 
-@keyframes temove {
+@keyframes removeL {
 	0% { opacity: 1; transform: translateX(0); }
 	100% { opacity: 0; transform: translateX(-100px);}
+}
+
+@keyframes removeR {
+	0% { opacity: 1; transform: translateX(0); }
+	100% { opacity: 0; transform: translateX(100px);}
+}
+
+@keyframes appearL {
+	0% { opacity: 0; transform: translateX(-100px); }
+	100% { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes appearR {
+	0% { opacity: 0; transform: translateX(100px); }
+	100% { opacity: 1; transform: translateX(0);}
 }
