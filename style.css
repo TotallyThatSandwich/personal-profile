@@ -122,14 +122,18 @@ body {
 	}
 }
 
-
-#toggle {
+.toggle {
 	transform: translateX(0);
 	opacity: 1;
-	transition: all 2s ease-in-out;
 }
 
 .remove {
-	transform: translateX(-100px);
+	animation: temove 1s;
 	opacity: 0;
+	transform: translateX(-800px);
+}
+
+@keyframes temove {
+	0% { opacity: 1; transform: translateX(0); }
+	100% { opacity: 0; transform: translateX(-100px);}
 }
