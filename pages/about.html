@@ -22,24 +22,27 @@
 		<div style="display: flex;">
 			<div style="justify-content: center; width: 75%; margin-left: auto; margin-right: auto; padding-bottom: 100px; text-align: left;">
 				<div id="trig1"></div>
-				<div id="pin1" class="toggle" style="padding-bottom: 50vh;">
+				<div id="pin1" class="toggle" style="padding-bottom: 100vh;">
 					<p>Skills:</p>
-					<p>1. Photography</p>
 				</div>
 				<div id="trig2"></div>
-				<div id="pin2" class="toggle" style="padding-bottom:50vh;">
-					<p>2. Video Editing</p>
+				<div id="pin2" class="toggle" style="padding-bottom: 100vh;">
+					<p>1. Photography</p>
 				</div>
 				<div id="trig3"></div>
-				<div id="pin3" class="toggle" style="padding-bottom: 50vh;">
-					<p>3. Front-End web development</p>
+				<div id="pin3" class="toggle" style="padding-bottom: 100vh;">
+					<p>2. Video Editing</p>
 				</div>
 				<div id="trig4"></div>
-				<div id="pin4" class="toggle" style="padding-bottom: 50vh;">
-					<p>4. JavaScript</p>
+				<div id="pin4" class="toggle" style="padding-bottom: 100vh;">
+					<p>3. Front-End web development</p>
 				</div>
 				<div id="trig5"></div>
-				<div id="pin5" class="toggle" style="padding-bottom: 100px;">
+				<div id="pin5" class="toggle" style="padding-bottom: 100vh;">
+					<p>4. JavaScript</p>
+				</div>
+				<div id="trig6"></div>
+				<div id="pin6" class="toggle" style="padding-bottom: 100px;">
 					<p>5. Python</p>
 				</div>
 				<div id="disapear-trig" style="padding-bottom: 5000px;"></div>
@@ -64,7 +67,7 @@
             triggerElement: '#trig1',
         })
 
-        .triggerHook(0.17)
+        .triggerHook(0.20)
         .setPin("#pin1")
 /*         .addIndicators() 
  */        .addTo(controller);
@@ -74,7 +77,7 @@
             pushFollowers: true
         })
 
-        .triggerHook(0.35)
+        .triggerHook(0.30)
         .setPin("#pin2")
 /*         .addIndicators() 
  */        .addTo(controller);
@@ -83,7 +86,7 @@
             triggerElement: '#trig3',
             pushFollowers: true
         })
-        .triggerHook(0.45)
+        .triggerHook(0.40)
         .setPin("#pin3")
 /*         .addIndicators() 
  */        .addTo(controller);
@@ -92,16 +95,26 @@
             triggerElement: '#trig4',
             pushFollowers: true
         })
-        .triggerHook(0.55)
+        .triggerHook(0.50)
         .setPin("#pin4")
 /*         .addIndicators() 
  */        .addTo(controller);
+
         var Scene5 = new ScrollMagic.Scene({
             triggerElement: '#trig5',
             pushFollowers: true
         })
-        .triggerHook(0.65)
+        .triggerHook(0.60)
         .setPin("#pin5")
+/*         .addIndicators() 
+ */        .addTo(controller);
+
+        var Scene5 = new ScrollMagic.Scene({
+            triggerElement: '#trig6',
+            pushFollowers: true
+        })
+        .triggerHook(0.70)
+        .setPin("#pin6")
 /*         .addIndicators() 
  */        .addTo(controller);
 
