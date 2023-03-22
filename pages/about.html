@@ -22,26 +22,27 @@
 		<div style="display: flex;">
 			<div style="justify-content: center; width: 75%; margin-left: auto; margin-right: auto; padding-bottom: 100px; text-align: left;">
 				<div id="trig1"></div>
-				<div id="pin1" style="padding-bottom: 700px;">
+				<div id="pin1" style="padding-bottom: 500px;">
 					<p>Skills:</p>
 					<p>1. Photography</p>
 				</div>
 				<div id="trig2"></div>
-				<div id="pin2" style="padding-bottom:500px;">
+				<div id="pin2" style="padding-bottom:300px;">
 					<p>2. Video Editing</p>
 				</div>
 				<div id="trig3"></div>
-				<div id="pin3" style="padding-bottom: 500px;">
+				<div id="pin3" style="padding-bottom: 300px;">
 					<p>3. Front-End web development</p>
 				</div>
 				<div id="trig4"></div>
-				<div id="pin4" style="padding-bottom: 500px;">
+				<div id="pin4" style="padding-bottom: 300px;">
 					<p>4. JavaScript</p>
 				</div>
 				<div id="trig5"></div>
-				<div id="pin5" style="padding-bottom: 500px;">
+				<div id="pin5" style="padding-bottom: 100px;">
 					<p>5. Python</p>
 				</div>
+				<div id="disapear-trig"></div>
 			</div>
 			<img>
 		</div>
@@ -103,6 +104,13 @@
         .setPin("#pin5")
 /*         .addIndicators() 
  */        .addTo(controller);
+
+ 		var remove = new ScrollMagic.Scene({
+            triggerElement: '#disapear-trig',
+            pushFollowers: true
+        })
+		.setClassToggle("#toggle", "remove")
+		.addTo(controller);
 
 
 	</script>

@@ -9,6 +9,10 @@
 	--col2: #9dafca;
 }
 
+* {
+	font-family: 'Rubik', sans-serif;	
+}
+
 .up {
 	margin-top: -40px;
 }
@@ -116,4 +120,16 @@ body {
 		font-size: 1rem;
 		cursor: pointer;
 	}
+}
+
+
+#toggle {
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 2s ease-in-out;
+}
+
+.remove {
+	transform: translateX(-100px);
+	opacity: 0;
 }
