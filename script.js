@@ -1,9 +1,8 @@
 var controller = new ScrollMagic.Controller();
 
 var Scene = new ScrollMagic.Scene({
-    triggerElement: '#fade'
+  triggerElement: "#fade",
 })
 
-
-.setClassToggle('#fade', 'fade-in')
-.addTo(controller)
+  .setClassToggle("#fade", "fade-in")
+  .addTo(controller);
