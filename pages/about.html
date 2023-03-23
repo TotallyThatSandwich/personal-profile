@@ -1,128 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About-Hamish</title>
-		<link rel="stylesheet" href="../style.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Hamish</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-	<body style="background-color: var(--acc)">
-		<div
-			class="main"
-			style="
-			height: 100vh;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			">
-			<!-- a simple about page that has cool scroll animations -->
-			<div
-				class="fade"
-				style="
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				">
-				<h1>Hello</h1>
-			</div>
-			<div
-				style="
-				display: flex;
-				justify-content: center;
-				width: 75%;
-				margin-left: auto;
-				margin-right: auto;
-				align-items: center;
-				padding-bottom: 100px;
-				">
-				<img
-					src="../imgs/me.png"
-					style="width: 35%; padding-right: 80px; transform: translateY(350px)"
-					class="rellax"
-					data-rellax-speed="6"
-					/>
-				<div>
-					<h1>Who am i?</h1>
-					<p style="text-align: center">
-						I'm a Year 10 student at East Doncaster Secondary College, studying
-						photography, media, IT, and systems technology, among other
-						subjects. My passion lies in IT, and I aspire to become a robotic
-						engineer or full-stack developer after graduation. Photography is
-						also another potential career path that interests me.
-					</p>
-				</div>
-			</div>
-			<div style="display: flex">
-				<div
-					style="
-					justify-content: center;
-					width: 75%;
-					margin-left: auto;
-					margin-right: auto;
-					padding-bottom: 100px;
-					text-align: left;
-					">
-					<div id="trig1"></div>
-					<div id="pin1" class="toggle" style="padding-bottom: 100vh">
-						<p>Skills:</p>
-					</div>
-					<div id="trig2"></div>
-					<div id="pin2" class="toggle" style="padding-bottom: 100vh">
-						<p>1. Photography</p>
-					</div>
-					<div id="trig3"></div>
-					<div id="pin3" class="toggle" style="padding-bottom: 100vh">
-						<p>2. Video Editing</p>
-					</div>
-					<div id="trig4"></div>
-					<div id="pin4" class="toggle" style="padding-bottom: 100vh">
-						<p>3. Front-End web development</p>
-					</div>
-					<div id="trig5"></div>
-					<div id="pin5" class="toggle" style="padding-bottom: 100vh">
-						<p>4. JavaScript</p>
-					</div>
-					<div id="trig6"></div>
-					<div id="pin6" class="toggle" style="padding-bottom: 100px">
-						<p>5. Python</p>
-					</div>
-					<div id="disapear-trig" style="padding-bottom: 00px"></div>
-				</div>
-				<img />
-			</div>
-			<!-- a simple contact section that allows the user to input a email, subject and text that will be emailed to me-->
-			<div class="Contact-me">
-				<form id="contact" action="https://formsubmit.co/abf4898a0ca1feb17b5010f644b3cc65" method="POST">
-					<h3>Contact</h3>
-					<h4>Contact me here</h4>
-					<fieldset>
-						<input placeholder="Your name" type="text" name="name" tabindex="1" required>
-					</fieldset>
-					<fieldset>
-						<input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
-					</fieldset>
-					<fieldset>
-						<textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
-					</fieldset>
-					<fieldset>
-						<button name="submit" type="submit">Submit</button>
-					</fieldset>
-				</form>
-			</div>
-			<div style="height: 3vh" class="footer">
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
-		<script src="../script.js"></script>
-		<script src="../js/typewriting.min.js"></script>
-		<script
-			src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-		<script
-			src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-		<script>
+  <body style="background-color: var(--acc)">
+    <div
+      class="main"
+      style="
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <!-- a simple about page that has cool scroll animations -->
+      <div
+        class="fade"
+        style="
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <h1>Hello</h1>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          width: 75%;
+          margin-left: auto;
+          margin-right: auto;
+          align-items: center;
+          padding-bottom: 100px;
+        "
+      >
+        <img
+          src="../imgs/me.png"
+          style="width: 35%; padding-right: 80px; transform: translateY(350px)"
+          class="rellax"
+          data-rellax-speed="6"
+        />
+        <div>
+          <h1>Who am i?</h1>
+          <p style="text-align: center">
+            I'm a Year 10 student at East Doncaster Secondary College, studying
+            photography, media, IT, and systems technology, among other
+            subjects. My passion lies in IT, and I aspire to become a robotic
+            engineer or full-stack developer after graduation. Photography is
+            also another potential career path that interests me.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div
+          style="
+            justify-content: center;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 100px;
+            text-align: left;
+          "
+        >
+          <div id="trig1"></div>
+          <div id="pin1" class="toggle" style="padding-bottom: 100vh">
+            <p>Skills:</p>
+          </div>
+          <div id="trig2"></div>
+          <div id="pin2" class="toggle" style="padding-bottom: 100vh">
+            <p>1. Photography</p>
+          </div>
+          <div id="trig3"></div>
+          <div id="pin3" class="toggle" style="padding-bottom: 100vh">
+            <p>2. Video Editing</p>
+          </div>
+          <div id="trig4"></div>
+          <div id="pin4" class="toggle" style="padding-bottom: 100vh">
+            <p>3. Front-End web development</p>
+          </div>
+          <div id="trig5"></div>
+          <div id="pin5" class="toggle" style="padding-bottom: 100vh">
+            <p>4. JavaScript</p>
+          </div>
+          <div id="trig6"></div>
+          <div id="pin6" class="toggle" style="padding-bottom: 100px">
+            <p>5. Python</p>
+          </div>
+          <div id="disapear-trig" style="padding-bottom: 00px"></div>
+        </div>
+        <img />
+      </div>
+      <!-- a simple contact section that allows the user to input a email, subject and text that will be emailed to me-->
+      <div class="Contact-me">
+        <form
+          id="contact"
+          action="https://formsubmit.co/abf4898a0ca1feb17b5010f644b3cc65"
+          method="POST"
+        >
+          <h3>Contact</h3>
+          <h4>Feedback and suggestions on my site would be amazing</h4>
+          <fieldset>
+            <input
+              placeholder="Your name"
+              type="text"
+              name="name"
+              tabindex="1"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your Email Address"
+              type="email"
+              name="email"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="Type your message here...."
+              name="message"
+              tabindex="5"
+              required
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <div style="height: 3vh" class="footer"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/typewriting.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script>
       var rellax = new Rellax(".rellax");
 
       var controller = new ScrollMagic.Controller();
@@ -195,5 +217,5 @@
         .setClassToggle(".toggle", "remove")
         .addTo(controller);
     </script>
-	</body>
+  </body>
 </html>
