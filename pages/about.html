@@ -101,11 +101,12 @@
       <div class="Contact-me">
         <form
           id="contact"
-          action="https://formsubmit.co/abf4898a0ca1feb17b5010f644b3cc65"
-          method="POST"
+          action="https://api.web3forms.com/submit" method="POST"
         >
           <h3>Contact</h3>
           <h4>Feedback and suggestions on my site would be amazing</h4>
+		  <input type="hidden" name="access_key" value="7e30f542-40a4-47f5-b4ce-faf29077916b">
+		  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <fieldset>
             <input
               placeholder="Your name"
@@ -132,6 +133,7 @@
               required
             ></textarea>
           </fieldset>
+		  <div style="padding-bottom: 10px;" class="h-captcha" data-captcha="true"></div>
           <fieldset>
             <button name="submit" type="submit">Submit</button>
           </fieldset>
@@ -144,6 +146,7 @@
     <script src="../js/typewriting.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
       var rellax = new Rellax(".rellax");
 
