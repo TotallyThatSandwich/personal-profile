@@ -26,6 +26,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 100px;
         "
       >
         <h1>Hello</h1>
@@ -41,11 +42,11 @@
           padding-bottom: 100px;
         "
       >
+        <div id="img-trig"></div>
         <img
+          id="img"
           src="../imgs/me.png"
-          style="width: 35%; padding-right: 80px; transform: translateY(350px)"
-          class="rellax"
-          data-rellax-speed="6"
+          class="toggle img"
         />
         <div>
           <h1>Who am i?</h1>
@@ -58,15 +59,15 @@
           </p>
         </div>
       </div>
-      <div style="display: flex">
+      <div style="display: flex; padding-top: 200px;">
         <div
           style="
             justify-content: center;
             width: 75%;
+            margin-right: 200px;
             margin-left: auto;
-            margin-right: auto;
             padding-bottom: 100px;
-            text-align: left;
+            text-align: right;
           "
         >
           <div id="trig1"></div>
@@ -93,7 +94,7 @@
           <div id="pin6" class="toggle" style="padding-bottom: 100px">
             <p>5. Python</p>
           </div>
-          <div id="disapear-trig" style="padding-bottom: 00px"></div>
+          <div id="disapear-trig" style="padding-bottom: 250px"></div>
         </div>
         <img />
       </div>
@@ -153,11 +154,22 @@
       var controller = new ScrollMagic.Controller();
 
       var Scene1 = new ScrollMagic.Scene({
+        triggerElement: "#img-trig",
+      })
+
+        .triggerHook(0.4)
+        .setPin("#img")
+        /*         .addIndicators()
+         */
+        .addTo(controller);
+
+      var Scene1 = new ScrollMagic.Scene({
         triggerElement: "#trig1",
       })
 
         .triggerHook(0.2)
         .setPin("#pin1")
+        .setClassToggle(".img", "big")
         /*         .addIndicators()
          */
         .addTo(controller);
