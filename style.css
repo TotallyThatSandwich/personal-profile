@@ -3,11 +3,12 @@
 :root {
   --prim: #a3c4bc;
   --prim2: #bfd7b5;
-  --acc: #e7efc5;
-  --acc2: #f2dda4;
-  --dark: #413c58;
-  --dark2: #332f45;
+  --acc: #9FC2CC;
+  --acc2: #EBA6A9;
+  --dark: #694D75;
+  --dark2: #002A32;
   --col2: #9dafca;
+  --background: #F1ECCE;
 }
 
 * {
@@ -49,14 +50,14 @@
   font-weight: 900;
   font-size: 3.7rem;
   text-transform: uppercase;
-  color: var(--dark);
+  color: var(--dark2);
 }
 
 .main p {
   width: 75%q;
   font-weight: 900;
   font-size: 1.7rem;
-  color: var(--dark);
+  color: var(--dark2);
 }
 
 .main a {
@@ -64,7 +65,7 @@
 }
 
 .main button {
-  background-color: var(--dark);
+  background-color: var(--dark2);
   /* Green */
   border: none;
   color: white;
@@ -80,7 +81,7 @@
 }
 
 .main button:hover {
-  background-color: var(--dark2);
+  background-color: var(--dark);
   /* Green */
 }
 
@@ -99,7 +100,7 @@ body {
   font-family: "Rubik", sans-serif;
   padding: 0px;
   margin: 0px;
-  background-color: #e5e7eb;
+  background-color: var(--background);
 }
 
 @media (max-width: 500px) {
